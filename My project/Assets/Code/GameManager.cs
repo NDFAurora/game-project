@@ -1,8 +1,7 @@
 using System;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
-{
+public class GameManager : MonoBehaviour{
     public GameObject ground;
     private float period = 4;
     public float timer = 0;
@@ -33,7 +32,7 @@ public class GameManager : MonoBehaviour
         GroundSineRotation();
     }
 
-    // Rotate ground plane from 30° to -30° every <period>seconds
+    // Rotate ground plane to oscillate every <period>seconds
     void GroundSineRotation()
     {
         float amplitude = .5f;
